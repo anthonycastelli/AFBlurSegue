@@ -105,9 +105,10 @@
         } completion:nil];
     } else {
         
-        UIBlurEffect *visualEffect              = [UIBlurEffect effectWithStyle:_blurEffectStyle];
-        UIVisualEffectView *blurView            = [[UIVisualEffectView alloc] initWithEffect:visualEffect];
-        blurView.contentView.backgroundColor    = _tintColor;
+//        UIBlurEffect *visualEffect              = [UIBlurEffect effectWithStyle:_blurEffectStyle];
+//        UIVisualEffectView *blurView            = [[UIVisualEffectView alloc] initWithEffect:visualEffect];
+        UIView *blurView = [[UIView alloc] init];
+        blurView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
         
         blurView.translatesAutoresizingMaskIntoConstraints = NO;
 
